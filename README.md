@@ -106,6 +106,9 @@ class ProductSerializer(serializers.ModelSerializer):
 
 The API is deployed on PythonAnywhere, a cloud platform for hosting Python applications. Deployment involves configuring a WSGI file and setting up the necessary environment variables.
 
+The live webapp can be accessed [Here](https://bittu2903.pythonanywhere.com/products/)
+The live webapp can be accessed [Here](https://bittu2903.pythonanywhere.com/products/1)
+
 ## Testing
 
 Testing of the API can be performed using tools such as Django's built-in test framework, Postman, or curl commands. Unit tests should cover all endpoints and functionalities to ensure proper behavior.
