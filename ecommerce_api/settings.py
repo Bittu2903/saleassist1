@@ -27,14 +27,13 @@ SECRET_KEY = "django-insecure-!!9q5ye8c5w4&#46pj0q=u1=a$+(q73k=g9(q=2r&k5u3!4k+h
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
 
 INSTALLED_APPS = [
     "products",
-    'django_browser_reload',
     "rest_framework",
     "django.contrib.admin",
     "django.contrib.auth",
@@ -84,9 +83,9 @@ DATABASES = {
     "default": {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'saleassist',
-        'USER': 'bittu2903',
-        'PASSWORD': 'BittuSingh',
-        'HOST': 'bittu2903.mysql.pythonanywhere-services.com',
+        'USER': 'root',
+        'PASSWORD': '',
+        'HOST': 'localhost',
         'PORT': '3306',
     }
 }
@@ -131,6 +130,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.1/howto/static-files/
 
 STATIC_URL = "static/"
+STATIC_ROOT = "static/"
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
